@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.whole-login-container{
+    width: 100%;
+    margin: 10px auto;
+    background-color: #FCF6FF;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+}
+.login-left, .signup-left{
+    width: 300px;
+    height: 250px;
+    background-color: #640491;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding: 4% 3% 2%;
+    line-height: 70px;
+    margin: 5% 20px;
+    border-radius: 30px;
+    font-family: 'Mrs Sheppards', cursive;
+}
+.login-welcome, .login-left-small-message{
+    font-family: 'McLaren', sans-serif;
+    font-size: 40px;
+}
+.login-left-small-message{
+    font-size: 15px;
+}
+
+.login-right, .signup-right{
+    width: 300px;
+    height: 270px;
+    background-color: white;
+    margin: 10% 20px;
+    border-radius: 30px;
+    font-family: 'McLaren', sans-serif;
+    padding: 3% 3% 4%;
+    color: #640491;
+}
+.signup-right{
+    height: 350px;
+}
+.login-right-header{
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 3px solid #640491;
+    width: 150px;
+    margin: 0px auto;
+    font-family: 'Miltonian Tattoo', serif;
+    font-weight: bold;
+}
+.each-login-whole-input{
+    display: flex;
+    gap: 5px;
+    border: 1px solid #640491;
+    background-color: #FCF6FF;
+    padding: 5px;
+    margin: 20px 10px;
+    width: 280px;
+    border-radius: 10px;
+}
+.login-input-icon{
+    width: 25px;
+    height: 25px;
+}
+.each-login-input{
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    width: 280px;
+}
+
+.login-forgot-password{
+    color: black;
+    text-align: right;
+    font-size: 10px;
+    text-decoration: underline;
+    margin: 0px 0px 10px;
+}
+.login-button{
+    text-align: center;
+    width: 200px;
+    background-color: #640491;
+    padding: 8px;
+    color: white;
+    margin: 2px auto;
+}
+.login-right-footer{
+    text-align: center;
+}
+
+
+@media(max-width:1150px){
+    .login-left, .signup-left{
+        margin-top: 10%;
+    }
+    .login-right, .signup-right{
+        margin-top: 15%;
+    }
+}
+@media(max-width:880px){
+    .login-left, .signup-left{
+        margin-top: 15%;
+    }
+    .login-right, .signup-right{
+        margin-top: 20%;
+    }
+    .signup-right{
+        height: 370px;
+    }
+}
+@media(max-width:780px){
+    .login-left, .signup-left{
+        display: none;
+    }
+}
