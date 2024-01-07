@@ -4,13 +4,13 @@
 }
 .whole-footer-container{
     background-color: #531a6d;
-    width: 100%;
-    padding: 35px 0px ;
+    /* width: 100%; */
+    padding: 22px 0px;
 }
 .footer-top{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
 }
 .footer-left{
     font-family: 'Mrs Sheppards', cursive;
@@ -22,7 +22,7 @@
 .footer-link{
     color: #d9b3eb;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 .footer-right{
     display: flex;
@@ -35,7 +35,7 @@
 }
 .footer-bottom{
     font-size: 15px;
-    color: rgb(58, 57, 57);
+    color: rgb(108, 107, 107);
     float: right;
-    margin: 15px 15px 0px;
+    margin: 5px 15px 0px;
 }

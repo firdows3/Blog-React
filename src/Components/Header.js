@@ -1,12 +1,24 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import "./Styles/Header.css"
-import { BrowserRouter, Link } from "react-router-dom"
+import { BrowserRouter, Link, useLocation } from "react-router-dom"
 import menu from "./Images/menu.png"
 
 export default function Header () {
 
-    const [active, setActive] = useState(-1)
     const [toggle, setToggle] = useState(false);
+
+    const location = useLocation();
+    const [routes, setRoutes] = useState(location.pathname)
+    useEffect(()=>{
+        if(location.pathname.split('/')[1] === ''){
+            setRoutes('/')
+        }
+        else{
+            setRoutes(location.pathname.split('/')[1])
+
+        }
+        console.log(routes);
+    }, [location.pathname])
 
     const navBar = [
         {
@@ -36,12 +48,12 @@ export default function Header () {
             <div className={ toggle ? "blog-header-right show-header-right" : "blog-header-right"}>
                 {
                     navBar.map((item, index) => {
+                        console.log(item.link, routes, (routes.includes(item.link) && item.link !=='/'), item.link === '/' || (routes.includes(item.link) && item.link !=='/'));
                         return (
                             <Link 
-                            className={active === index ? "blog-header-right-each-link active-link" : "blog-header-right-each-link"} 
+                            className={ item.link === routes ? "blog-header-right-each-link active-link" : "blog-header-right-each-link"} 
                             to={`${item.link}`} 
                             onClick={()=>{
-                                setActive(index);
                                 setToggle(!toggle);
                             }}>{item.name}</Link>
                         )

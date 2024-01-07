@@ -13,11 +13,14 @@
     padding: 20px;
     width: 550px;
 }
+.blog-post-link{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
 .blog-post-title{
-    font-size: 20px;
     font-family: 'McLaren', sans-serif;
     padding-bottom: 10px;
-    text-decoration: underline;
 }
 .blog-user-profile-container{
     text-align: center;
@@ -54,18 +57,20 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    height: 70vh;
+    height: 73.5vh;
 }
 .add-image-visualization{
     width: 250px;
-    height: 220px;
+    height: 250px;
     margin: 15px;
+    border-radius: 15px
+    
 }
 .blog-add-form{
     border-radius: 15px;
-    background-color: #FCF6FF;
     margin: 10px 20px;
     padding: 10px 30px;
+    border: 1px solid black;
     width: 400px;
     height: 400px;
     font-size: 25px;
@@ -77,7 +82,11 @@
 }
 .blog-add-picture{
     padding: 10px 10px;
-    margin: 30px 0px;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 }
 .add-image-icon{
     width: 25px;
@@ -85,28 +94,28 @@
 }
 .add-image-feature-icons{
     display: flex;
-    justify-content: space-between;
-    margin: 15px 10px;
-    font-family: 'Playfair Display', serif;
+    margin: 0px 20px;
+    font-family: 'nyala';
+    font-size: 13px;
+    float: right;
 }
 .add-image-each-feature{
     padding: 2px 8px;
-    border: 1px solid #640491;
-    border-radius: 50%;
     cursor: pointer;
 }
 .active-icon{
-    background-color: #640491;
-    color: #FCF6FF;
+    color: #a509ed;
+    border-bottom: 2px solid #a509ed;
 }
 .add-blog-input-title{
-    width: 350px;
-    padding: 5px 10px;
+    width: 360px;
+    padding: 10px;
     border: 1px solid #640491;
     background-color: transparent;
     outline: none;
     margin-top: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-family: 'nyala';
 }
 .add-blog-description-emoji{
     display: flex;
@@ -114,15 +123,16 @@
     margin: 10px 0px;
     padding: 5px 10px;
     border: 1px solid #640491;
-    width: 350px;
+    width: 360px;
     height: 180px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .add-blog-input-description{
     outline: none;
     background-color: transparent;
     font-size: 15px;
     border: 0;
+    font-family: 'nyala';
 }
 .emoji-picker{
     cursor: pointer;
@@ -131,6 +141,7 @@
     display: flex;
     justify-content: space-between;
     float: right;
+    margin-right: 15px;
 }
 
 
@@ -138,13 +149,13 @@
     display: grid;
     grid-template-columns: auto auto;
     width: 75%;
-    margin: 5% auto;
+    margin: 5% auto 10px;
     font-family: 'McLaren', sans-serif;
+    height: 70vh;
 }
 .each-blog-container{
-    width: 85%;
+    width: 600px;
     display: flex;
-    justify-content: center;
     border: 1px solid #640491;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 20px 0px 20px 20px;
@@ -160,8 +171,9 @@
     transition: 1s;
 }
 .each-blog-post-picture{
-    width: 350px;
-    height: 330px;
+    width: 250px;
+    height: 230px;
+    border-radius: 10px;
 }
 .each-blog-title{
     font-size: 25px;
@@ -181,6 +193,30 @@
 .each-blog-comments-header{
     font-size: 25px;
     text-align: center;
+}
+.each-blog-edit-button{
+    border: 1px solid #640491;
+    border-radius: 15px;
+    padding: 5px 10px 10px;
+    width: 60px;
+    text-align: center;
+    margin: 10px 18px 0px;
+    height: 17px;
+}
+.each-blog-edit-inputs{
+    display: block;
+    width: 500px;
+    margin: 10px 13%;
+}
+.each-blog-edit-input{
+    width: 400px;
+    margin: 7px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+}
+.edit-description{
+    height: 100px;
 }
 
 
@@ -255,8 +291,11 @@
     .blog-add-form{
         width: 300px;
     }
-    .add-blog-input-title, .add-blog-input-description{
+    .add-blog-input-title, .add-blog-description-emoji{
         width: 280px;
+    }
+    .add-blog-input-description{
+        width: 250px;
     }
 }
 @media(max-width:480px){
@@ -267,6 +306,15 @@
     .blog-post-description{
         width: 300px;
     }
+    .blog-add-form{
+        width: 250px;
+    }
+    .add-blog-input-title, .add-blog-description-emoji{
+        width: 230px;
+    }
+    .add-blog-input-description{
+        width: 210px;
+    }
 }
 @media(max-width:460px){
     .each-blog-container{
@@ -275,4 +323,7 @@
     .blog-post-description{
         padding: 10px 1px;
     } 
+    .add-blog-container{
+        height: 79vh;
+    }
 }

@@ -32,8 +32,6 @@
 
 
 .each-blog-post-container{
-    /* display: grid;
-    grid-template-columns: 250px 400px; */
     display: flex;
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -49,7 +47,8 @@
 }
 .blog-post-image{
     width: 230px;
-    height: 200px;
+    height: 230px;
+    border-radius: 15px;
 }
 .blog-user-profile{
     display: flex;
@@ -92,7 +91,7 @@
     margin: 10px 0px;
 }
 .see-more-button{
-    font-size: 20px;
+    font-size: 10px;
     color: #640491;
     text-decoration: underline;
     cursor: pointer;

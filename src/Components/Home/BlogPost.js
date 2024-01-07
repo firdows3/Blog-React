@@ -89,7 +89,7 @@ function Box ({...postInfo}) {
         <div className="each-blog-post-container">
             <img src={postImage} className="blog-post-image" />
             <div>
-                <a href={url}>
+                <a href={url} className="blog-post-link">
                 <div className="blog-user-profile">
                     <img src={userProfilePicture} className="blog-user-profile-picture" />
                     <div className="blog-user-name">{userName}</div>

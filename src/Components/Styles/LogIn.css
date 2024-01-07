@@ -9,6 +9,7 @@
     height: 88vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .login-left, .signup-left{
     width: 300px;
@@ -34,7 +35,7 @@
 .login-right, .signup-right{
     width: 300px;
     height: 270px;
-    background-color: white;
+    /* background-color: white; */
     margin: 10% 20px;
     border-radius: 30px;
     font-family: 'McLaren', sans-serif;
@@ -83,11 +84,12 @@
 }
 .login-button{
     text-align: center;
-    width: 200px;
+    width: 280px;
     background-color: #640491;
-    padding: 8px;
+    padding: 8px 0px;
     color: white;
     margin: 2px auto;
+    border-radius: 10px;
 }
 .login-right-footer{
     text-align: center;

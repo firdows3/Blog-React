@@ -86,7 +86,7 @@ function App() {
               <Route path="addblog" element={<AddBlog blogPostArray={blogPostArray} setBlogPostArray={setBlogPostArray} bold={bold} setBold={setBold} italic={italic} setItalic={setItalic} center={center} setCenter={setCenter} underline={underlined} setUnderline={setUnderlined} />} />
               {
                 blogPostArray.map(item => {
-                  return <Route path=":id" element={<EachBlog blogPostArray={blogPostArray} />} />
+                  return <Route path=":id" element={<EachBlog blogPostArray={blogPostArray} setBlogPostarray={setBlogPostArray} />} />
                 })
               }
             </Route>

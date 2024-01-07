@@ -13,10 +13,10 @@ export default function Footer (){
             <div className="footer-top">
                 <div className="footer-left">Dev's Blog</div>
                 <div className="blog-header-right">
-                    <Link className="footer-link" to="/">Home</Link>
-                    <Link className="footer-link" to="blog">My Blog</Link>
-                    <Link className="footer-link" to="about">About</Link>
-                    <Link className="footer-link" to="login">Log in</Link>
+                    <div className="footer-link">Contact Us</div>
+                    <div className="footer-link">About Us</div>
+                    <div className="footer-link">FAQs</div>
+                    <div className="footer-link">Privacy and policy</div>
                 </div>
                 <div className="footer-right">
                     <img src={github} className="footer-icon" />

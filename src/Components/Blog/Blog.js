@@ -47,7 +47,7 @@ function Box ({...postInfo}) {
         <div className="each-blog-post-container">
             <img src={postImage} className="blog-post-image each-blog-post-image" />
             <div className="blog-post-description">
-                <Link to={`${id}`}><div className="blog-post-title">{postTitle}</div></Link>
+                <Link to={`${id}`} className="blog-post-link"><div className="blog-post-title">{postTitle}</div></Link>
                 <div
                   style={{
                     fontWeight: isBold ? "bold" : "normal",
